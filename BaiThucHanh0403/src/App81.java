@@ -1,6 +1,6 @@
-mport java.util.Scanner;
-public class App12 {
-    public static void main(String[] args) throws Exception{
+import java.util.Scanner;
+public class App81 {
+    public static void main(String[] args)throws Exception{
         int x,y;
         Scanner sc = new Scanner(System.in);
         //Nhap so hang va cot

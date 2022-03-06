@@ -1,14 +1,19 @@
 import java.util.Scanner;
-public class AppBai2 {
+public class App3 {
     public static void main(String[] args) throws Exception{
-        int n;
+        String Ten;
+        int Tuoi;
         Scanner sc = new Scanner(System.in);
-        System.out.print("Nhap so tu nhien bat ki: ");
-        n = sc.nextInt();
-        if (n % 2 == 0) {
-            System.out.println("So vua nhap la so chan.");
+        System.out.print("Nhap ten: ");
+        Ten = sc.nextLine();
+        System.out.print("Nhap tuoi: ");
+        Tuoi = sc.nextInt();
+        if (Tuoi < 16) {
+            System.out.print("Ban " + Ten + " o do tuoi vi thanh nien.");
+        }else if (Tuoi >= 16 && Tuoi <= 18) {
+            System.out.print("Ban " + Ten + " o do tuoi truong thanh.");
         } else {
-            System.out.println("So vua nhap la so le.");
+            System.out.print("Ban " + Ten + " da gia.");
         }
         sc.close();
     }

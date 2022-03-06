@@ -1,15 +1,15 @@
 import java.util.Scanner;
-public class AppBai2 {
+public class App5 {
     public static void main(String[] args) throws Exception{
         int n;
         Scanner sc = new Scanner(System.in);
-        System.out.print("Nhap so tu nhien bat ki: ");
-        n = sc.nextInt();
-        if (n % 2 == 0) {
-            System.out.println("So vua nhap la so chan.");
-        } else {
-            System.out.println("So vua nhap la so le.");
+        int tong = 0;
+        while (tong <100) {
+            System.out.print("Nhap so nguyen: ");
+            n = sc.nextInt();
+            tong +=n;
         }
+        System.out.println("Tong cac so da nhap la: " + tong);
         sc.close();
     }
 }
